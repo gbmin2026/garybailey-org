@@ -41,9 +41,10 @@ h2.big{font-size:clamp(26px,4vw,34px);color:var(--navy);margin-bottom:18px;line-
 p.body{color:var(--muted);font-size:17px;max-width:68ch;margin-bottom:16px}
 .split{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 @media(max-width:820px){.split{grid-template-columns:1fr;gap:30px}}
-.portrait{aspect-ratio:4/5;border-radius:14px;background:linear-gradient(150deg,#263a63,#33507f);display:flex;align-items:center;justify-content:center;color:#aebbd2;text-align:center;font-size:14px;padding:24px;box-shadow:0 20px 50px rgba(22,35,61,.18)}
-.video-frame{aspect-ratio:16/9;border-radius:14px;background:linear-gradient(150deg,var(--navy),var(--navy-2));display:flex;flex-direction:column;align-items:center;justify-content:center;color:#aebbd2;text-align:center;padding:24px;border:1px solid var(--line)}
-.play{width:64px;height:64px;border-radius:50%;background:rgba(200,162,74,.15);border:2px solid var(--gold-soft);display:flex;align-items:center;justify-content:center;color:var(--gold-soft);font-size:26px;margin-bottom:14px}
+.portrait{aspect-ratio:4/5;border-radius:14px;overflow:hidden;box-shadow:0 20px 50px rgba(22,35,61,.18)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.video-frame{aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000}
+.video-frame iframe{width:100%;height:100%;border:0;display:block}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
 @media(max-width:820px){.grid2{grid-template-columns:1fr}}
 .postcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 26px;transition:transform .18s,box-shadow .2s}
@@ -73,11 +74,11 @@ footer .b span{color:var(--gold-soft)}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap"><div class="brand">Reach The World<span> Ministries</span></div><nav class="links"><a href="index.html" class="on">Home</a><a href="blog.html">Blog</a><a href="video.html">Video</a><a href="books.html">Books</a><a href="with-love-sophia.html">With Love, Sophia</a><a href="contact.html">Contact</a></nav></div></header>
+<header class="nav"><div class="wrap"><div class="brand">Reach The World<span> Ministries</span></div><nav class="links"><a href="index.html" class="on">Home</a><a href="blog.html">Blog</a><a href="video.html">Video</a><a href="teachings.html">Teachings</a><a href="books.html">Books</a><a href="with-love-sophia.html">With Love, Sophia</a><a href="contact.html">Contact</a></nav></div></header>
 <section class="hero"><div class="wrap">
-<div class="eyebrow">Reach The World Ministries</div>
+<div class="eyebrow">Pastor &middot; Evangelist</div>
 <h1>Gary Bailey</h1>
-<p class="lead">Let your hands be strong &hellip; that the temple might be built. &mdash; Zechariah 8:9</p>
+<p class="lead">Encouraging and strengthening believers, that the Temple of God may be built in the earth.</p>
 <div class="cta"><a href="video.html" class="btn btn-gold">Watch messages</a><a href="blog.html" class="btn btn-ghost">Read the blog</a></div>
 </div></section>
 
@@ -88,13 +89,13 @@ footer .b span{color:var(--gold-soft)}
 <p class="body">For decades Gary Bailey has served as a pastor and evangelist &mdash; carrying the Gospel of Jesus Christ across the country and to the nations through revivals, church meetings, and overseas missions.</p>
 <p class="body">His heart is to encourage and strengthen God&rsquo;s people: to stir up faith, to make room for the presence and gifts of the Holy Spirit, and to see believers rise up strong so the work of God may be built in the earth.</p>
 </div>
-<div class="portrait">Photo of Gary goes here<br><span class="hint">(send one and I&rsquo;ll drop it in)</span></div>
+<div class="portrait"><img src="gary-bailey.jpg" alt="Gary Bailey, pastor and evangelist"></div>
 </div></section>
 
 <section class="sec alt"><div class="wrap">
-<div class="sec-label">Latest message</div>
+<div class="sec-label">Latest messages</div>
 <h2 class="big">Watch &amp; be encouraged</h2>
-<div class="video-frame mt"><div class="play">&#9654;</div>Your featured video will play here<br><span class="hint">(once your YouTube channel is up, I&rsquo;ll embed it)</span></div>
+<div class="video-frame mt"><iframe src="https://www.youtube.com/embed/videoseries?list=UUKhvNaftE06K0WwdbNGv1Aw&amp;rel=0" title="Reach The World Ministries videos" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <div class="mt"><a href="video.html" class="btn btn-gold">More messages</a></div>
 </div></section>
 
@@ -121,6 +122,6 @@ footer .b span{color:var(--gold-soft)}
 <div class="hint" style="color:#9fb0cc;margin-top:16px">&#128274; Secure, confirmed sign-up &mdash; you'll get one confirmation email; click the link in it to finish. Unsubscribe anytime.</div>
 </div>
 </section>
-<footer id="contact"><div class="wrap"><div class="fgrid"><div><div class="b">Reach The World<span> Ministries</span></div><p>Pastor &amp; Evangelist &middot; Reach the World Ministries<br>Encouraging and strengthening believers, that the Temple of God may be built in the earth.</p></div><div><h4>Contact</h4><p>PO Box 703<br>Dillsburg, PA 17019<br><br><a href="contact.html" style="color:var(--gold-soft)">Send a message &rarr;</a></p></div><div><h4>Explore</h4><p><a href="index.html">Home</a><br><a href="blog.html">Blog</a><br><a href="video.html">Video</a><br><a href="books.html">Books</a><br><a href="with-love-sophia.html">With Love, Sophia</a><br><a href="contact.html">Contact</a></p></div></div><div class="fine">&copy; 2026 Gary Bailey &middot; Reach the World Ministries</div></div></footer>
+<footer id="contact"><div class="wrap"><div class="fgrid"><div><div class="b">Reach The World<span> Ministries</span></div><p>Pastor &amp; Evangelist &middot; Reach the World Ministries<br>Encouraging and strengthening believers, that the Temple of God may be built in the earth.</p></div><div><h4>Contact</h4><p>PO Box 703<br>Dillsburg, PA 17019<br><br><a href="contact.html" style="color:var(--gold-soft)">Send a message &rarr;</a></p></div><div><h4>Explore</h4><p><a href="index.html">Home</a><br><a href="blog.html">Blog</a><br><a href="video.html">Video</a><br><a href="teachings.html">Teachings</a><br><a href="books.html">Books</a><br><a href="with-love-sophia.html">With Love, Sophia</a><br><a href="contact.html">Contact</a></p></div></div><div class="fine">&copy; 2026 Reach The World Ministries &middot; Gary Bailey</div></div></footer>
 </body>
 </html>
